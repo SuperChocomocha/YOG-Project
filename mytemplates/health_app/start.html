@@ -1,0 +1,16 @@
+<h1>Start</h1>
+
+{% if messages %}
+    <ul class = "messages">
+        {% for message in messages %}
+            <li {% if message.tags %} class = "{{message.tags}}" {% endif %}>{{message}}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+<ul>
+    <li>Sign Up <a href = "/signup/">Sign Up</a></li>
+    <li>Sign In <a href = "/login/">Sign In</a></li>
+    <!-- add reset password/account link of some sort -->
+</ul>
+

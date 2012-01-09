@@ -1,0 +1,15 @@
+<h1>Homepage</h1>
+
+{% if messages %}
+    <ul class = "messages">
+        {% for message in messages %}
+            <li {% if message.tags %} class = "{{message.tags}}" {% endif %}>{{message}}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+<ul>
+    <li>Heart Rate <a href = "/app/details/">View Details</a> <a href = "/app/input_hr/">Enter Data</a></li>
+    <li>Blood Pressure <a href = "/app/details/">View Details</a> <a href = "/app/input_bp/">Enter Data</a></li>
+</ul>
+

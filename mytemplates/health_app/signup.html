@@ -1,0 +1,21 @@
+<h1>Sign Up</h1>
+
+{% if messages %}
+    <ul class = "messages">
+        {% for message in messages %}
+            <li {% if message.tags %} class = "{{message.tags}}" {% endif %}>{{message}}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+<form action = "/redirect/" method = "post">
+{% csrf_token %}
+    Email Address: <input type = "text" name = "email"/><br/>
+    Password: <input type = "password" name = "pass"/><br/>
+    Confirm Password: <input type = "password" name = "cpass"/><br/>
+    Gender: <input type = "radio" name = "gender" value = "M"/> Male <input type = "radio" name = "gender" value = "F"/> Female<br/>
+    <input type = "submit" value = "Submit"/>
+</form>
+
+<a href = "/start/">Go Back to Start Page</a></li>
+

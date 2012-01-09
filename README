@@ -4,3 +4,6 @@ Team Members:
 
 Max Guo, Debbie Yiu, Dan (the man)Trujillo, Jenny Wang, Alen Kubati
 
+note: - add database info in settings.py (name, user, pass)
+      - currently a functional sign up system but without any security measures, only page flow
+
